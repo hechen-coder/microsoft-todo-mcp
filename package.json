@@ -2,7 +2,7 @@
   "name": "microsoft-todo-mcp-cn",
   "version": "0.2.0",
   "private": true,
-  "description": "Microsoft To Do 的 MCP 服务：让 Claude 等 AI 新增/勾选/搜索任务，并支持读取“我的一天”。中文输出，个人账号免注册 Azure 应用。",
+  "description": "Microsoft To Do 的 MCP 服务：让 Claude 等 AI 用自然语言新增、勾选、搜索任务和管理子步骤。中文输出，个人账号免注册 Azure 应用。",
   "keywords": [
     "mcp",
     "model-context-protocol",
