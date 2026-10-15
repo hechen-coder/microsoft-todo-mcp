@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tgz
+*.tmp.mjs
+.env
+# 登录令牌，切勿提交
+msal-cache.json
+tokens.json

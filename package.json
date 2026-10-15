@@ -1,0 +1,57 @@
+{
+  "name": "microsoft-todo-mcp-cn",
+  "version": "0.2.0",
+  "description": "Microsoft To Do 的 MCP 服务：让 Claude 等 AI 新增/勾选/搜索任务，并支持读取“我的一天”。中文输出，个人账号免注册 Azure 应用。",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "microsoft-todo",
+    "todo",
+    "microsoft-graph",
+    "claude",
+    "my-day",
+    "chinese"
+  ],
+  "license": "MIT",
+  "author": "hechen-coder",
+  "homepage": "https://github.com/hechen-coder/microsoft-todo-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hechen-coder/microsoft-todo-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hechen-coder/microsoft-todo-mcp/issues"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "microsoft-todo-mcp-cn": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "login": "node dist/cli.js login",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^7.1.0",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2"
+  }
+}
